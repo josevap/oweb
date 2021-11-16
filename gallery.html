@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0"> 
+        <title>Pavlinka Josheva</title>
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/587f6df6a3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <section class="header"> 
+            <nav>
+                <a href="index.html"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutme.html">ABOUT ME</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="poll.html">POLL</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>  
+                </div>
+            </nav>
+            <div class="Heading">
+                <h2>Welcome to my Gallery!</h2>
+                <hr>
+            </div>
+                        <div class="gal">
+                            <div class="photo">
+                                    <img class="gal-photo" src="images/7791930e6a1b4122302899864f0a7285.jpg" style="height:300px">  
+                                <br> 
+                                <div class="like-btn">
+                                    <i onclick="Toggle(); count()" id="btn" class="far fa-heart"> Like 
+                                    </i>    <input id="likecount" type="number" value="38">
+                                </div>
+                                <div id="postedComment1"></div>
+                                    <div class="comments">
+                                    <form id="newcommen1">
+                                    <textarea id="commName1" type="text" maxlength="20" placeholder="Name"></textarea>
+                                    <br>
+                                    <textarea class="com" id="txcomment1" maxlength="100" placeholder="Your comment..."></textarea>
+                                    <br>
+                                    <button class="subm">Submit</button>
+                                    </form>
+                                </div>
+                            
+                            </div>
+
+                            <div class="photo">
+                                <img class="gal-photo" src="images/91ab351e0ca4bc826cde2683b1de7759.jpg" style="height:300px">  
+                            <br> 
+                            <div class="like-btn">
+                                <i onclick="Toggle1(); count1()" id="btn1" class="far fa-heart"> Like 
+                                </i>    <input id="likecount1" type="number" value="86">
+                            </div>
+                            <div id="postedComment2"></div>
+                                <div class="comments">
+                                    <form id="newcommen2">
+                                    <textarea id="commName2" type="text" maxlength="20" placeholder="Name"></textarea>
+                                    <br>
+                                    <textarea class="com" id="txcomment2" maxlength="100" placeholder="Your comment..."></textarea>
+                                    <br>
+                                    <button class="subm">Submit</button>
+                                    </form>
+                                </div>
+                        
+                            </div>
+
+                            <div class="photo">
+                                <img class="gal-photo" src="images/ed40fd3338fe353632a8c9eb474ad906.jpg" style="height:300px">  
+                            <br> 
+                            <div class="like-btn">
+                                <i onclick="Toggle2(); count2()" id="btn2" class="far fa-heart"> Like 
+                                </i>    <input id="likecount2" type="number" value="50">
+                            </div>
+                            <div id="postedComment3"></div>
+                                <div class="comments">
+                                    <form id="newcommen3">
+                                    <textarea id="commName3" type="text" maxlength="20" placeholder="Name"></textarea>
+                                    <br>
+                                    <textarea class="com" id="txcomment3" maxlength="100" placeholder="Your comment..."></textarea>
+                                    <br>
+                                    <button class="subm">Submit</button>
+                                    </form>
+                                </div>
+                        
+                            </div>
+                        </div>
+                     </section> 
+   
+            <script src="./main.js"></script>                
+
+    
+    
+    </body>
+</html>
