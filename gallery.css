@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trirong', serif;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+section.header {
+    height: 100vh;
+    width: 100%;
+}
+body{
+    background: linear-gradient(rgba(82, 59, 88, 0.7), rgba(63, 88, 122, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    display:flex;
+    padding: 3% 3%;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img {
+    width: 100px;
+}
+.nav-links{
+    flex:2;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 5px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: wavy;
+}
+.nav-links ul li::after {
+    content: ' ';
+    width: 0%;
+    height: 1px;
+    background: #ccccff;
+    display: block;
+    margin: auto;
+    transition:0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.Heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    color: #ccccff;
+    text-align:center;
+    letter-spacing: 2px;
+}
+.Heading:hover {
+    text-transform: uppercase;
+    color:#ccccff;
+    font-style: bold;
+    cursor: pointer;
+}
+hr {
+    margin:400px;
+    margin-top: 2px;
+    color: #ccccff;
+    margin-bottom: 10px;
+    background-color: #ccccff;
+}
+.gal{
+    grid-template-columns: 380px 380px 40px;
+    display: grid;
+    padding: 40px;
+    padding-top:10px;
+}
+.photo {
+    padding: 25px;
+}
+.photo img {
+    display: flex;
+    border: 3px solid #ccccff;
+}
+.fas {
+    display: inline-block;
+    background:transparent;
+    color: #ccccff;
+    text-decoration: none;
+    border: 2px solid #ccccff;
+    font-weight: bold;
+    border-radius:30px;
+    transition: .2s;
+    text-align: center;
+    padding:12px;
+
+}
+.fas:hover {
+    background: #ccccff79;
+    border: 2px solid #ccccff;
+    cursor: pointer;
+}
+.far {
+    display: inline-block;
+    background:transparent;
+    color: #ccccff;
+    text-decoration: none;
+    border: 2px solid #ccccff;
+    font-weight: bold;
+    border-radius:30px;
+    transition: .2s;
+    text-align: center;
+    padding:12px;
+}
+.fas:hover {
+    background: #ccccff79;
+    border: 2px solid #ccccff;
+    cursor: pointer;
+}
+#likecount {
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    font-weight: 800; 
+    width: 100%;
+    pointer-events: none;
+    text-shadow: 2px 2px 3px #a8a4e7;
+    color:#ccccff;
+    padding-left: 40px;
+}
+#likecount1 {
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    font-weight: 800; 
+    width: 100%;
+    pointer-events: none;
+    text-shadow: 2px 2px 3px #a8a4e7;
+    color:#ccccff;
+    padding-left: 40px;
+}
+#likecount2 {
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    font-weight: 800; 
+    width: 100%;
+    pointer-events: none;
+    text-shadow: 2px 2px 3px #a8a4e7;
+    color:#ccccff;
+    padding-left: 40px;
+}
+
+.like-btn {
+    grid-template-columns: 90px 180px;
+    display: grid;
+    padding-left: 60px;
+    padding-bottom: 10px;
+}
+
+.comments {
+    padding-top: 20px;
+    padding-left: 45px;
+    color: white;
+}
+
+.comments textarea {
+    background: transparent;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline:0;
+    font-style: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+.com {
+    height: 100px;
+}
+
+.subm {
+    background:transparent;
+    border-radius:5px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    height: 25px;
+    letter-spacing: 2px;
+    outline:0;
+    padding: 0 15px 0 15px;
+    color: white;
+}
+.subm:hover {
+    background-color: #ccccff;
+    transition: 0.3s ease;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.418);
+}
+
+/* =============== Comment ================ */
+.commentStyle {
+    border: 1px solid #ccccff;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+}
+
