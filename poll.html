@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" 
+        content="with=device-width, initial-scale=1.0"> 
+        <title>Pavlinka Josheva</title>
+        <link rel="stylesheet" href="poll.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Trirong:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="aboutme.html">ABOUT ME</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="poll.html">POLL</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>  
+                </div>
+            </nav>
+            <div class="text-box">
+                <h3>If you ever have time, take this survey, it'll only take 2 minutes to complete</h3>
+            </div>  
+            <form id="form">
+                    <div class="form-control">
+                        <label for="name" id="label-name">
+                            Name
+                        </label>
+
+                        <input type="text"
+                               id="name"
+                               placeholder="Enter your name" />
+                    </div>
+              
+                    <div class="form-control">
+                        <label for="email" id="label-email">
+                            Email
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               placeholder="Enter your email" />
+                    </div>
+              
+                    <div class="form-control">
+                        <label for="age" id="label-age">
+                            Age
+                        </label>
+             
+                        <input type="text"
+                               id="age"
+                               placeholder="Enter your age" />
+                    </div>
+
+                  <div class="role">
+                        <label for="role-label" id="label-role">
+                            Are you a 
+                        </label>
+                        <select name="role" id="role">
+                            <option value="student">Student</option>
+                            <option value="intern">Intern</option>
+                            <option value="professional">Professional</option>
+                        </select>
+                    </div>
+                    
+              <br> <br> <br>
+                    <div class="form-control">
+                        <label>
+                           Would you recommend my page to a friend?
+                        </label>
+       
+                        <label for="recommed-1">
+                            <input type="radio"
+                                   id="recommed-1"
+                                   name="recommed">Yes
+                        </label>
+                        <label for="recommed-2">
+                            <input type="radio"
+                                   id="recommed-2"
+                                   name="recommed">No
+                        </label>
+                        <label for="recommed-3">
+                            <input type="radio"
+                                   id="recommed-3"
+                                   name="recommed">Maybe, if you make some changes
+                        </label>
+                    </div>
+              <br> <br> <br>
+                    <div class="form-control">
+                        <label>Check the languages you know
+                            <small>(Check all that apply)</small>
+                        </label>
+                        <!-- Input Type Checkbox -->
+                        <label for="inp1">
+                            <input type="checkbox"
+                                   name="inp">C++</label>
+                        <label for="inp2">
+                            <input type="checkbox"
+                                   name="inp">C</label>
+                        <label for="inp3">
+                            <input type="checkbox"
+                                   name="inp">Java</label>
+                        <label for="inp4">
+                            <input type="checkbox"
+                                   name="inp">JavaScript</label>
+                        <label for="inp5">
+                            <input type="checkbox"
+                                   name="inp">Angular</label>
+                        <label for="inp6">
+                           Other: <input type="text" name="inp" placeholder="Separate the languages with a coma">
+                        </label>
+                    </div>
+                    <br> 
+                    <div class="form-control">
+                        <label for="comment">
+                            Any suggestions
+                        </label>
+            
+                        <textarea name="comment" id="comment"
+                            placeholder="Enter your suggestion here">
+                        </textarea>
+                    </div>
+    
+                    <button class="subm" type="submit" value="submit">
+                        Submit
+                    </button>
+                </form>
+            </section>
+                
+    </body>
+</html>

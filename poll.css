@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trirong', serif;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+section.header {
+    height: 100vh;
+    width: 100%;
+}
+body{
+    background: linear-gradient(rgba(82, 59, 88, 0.7), rgba(63, 88, 122, 0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    display:flex;
+    padding: 3% 3%;
+    justify-content:space-between;
+    align-items: center;
+}
+nav img {
+    width: 100px;
+}
+.nav-links{
+    flex:2;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 5px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: wavy;
+}
+.nav-links ul li::after {
+    content: ' ';
+    width: 0%;
+    height: 1px;
+    background: #ccccff;
+    display: block;
+    margin: auto;
+    transition:0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 80%;
+    color:#fff;
+    position:absolute;
+    text-align: center;
+    left: 10%;
+    font-family: sans-serif;
+}
+form {
+    background:rgba(82, 59, 88, 0.205);
+    width:600px;
+    margin: 50px auto;
+    max-width: 95%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top:40px;
+}
+form ::placeholder {
+    color: rgba(255, 255, 255, 0.37);
+}
+
+
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+    color:white;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+
+button {
+    background-color: #ccccff;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.form-control input {
+    border-radius: 5px;
+      border: 1px solid white;
+      outline:0;
+      width: 100%;
+      height: 30px;
+      background: transparent;
+      font-size: 16px;
+      letter-spacing: 2px;
+      padding: 12px 16px;
+}
+.form-control option {
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 12px 16px;
+    color: black;
+}
+.role {
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color:white;
+}
+.role select {
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 12px 16px;
+    font-family:inherit;
+    display: block;
+    background-color: transparent;
+}
+.form-control textarea {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+::placeholder {
+    color:rgba(255, 255, 255, 0.473);
+}
+.subm {
+        background:transparent;
+        border-radius:5px;
+        border: 1px solid white;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 600;
+        height: 25px;
+        letter-spacing: 2px;
+        outline:0;
+        padding: 0 15px 0 15px;
+        color: white;
+}
+.subm:hover {
+        background-color: #ccccff;
+        transition: 0.3s ease;
+    }
