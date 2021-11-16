@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
-    color: white;
+
 }
 section.header {
     height: 100vh;
@@ -64,32 +64,77 @@ nav img {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    padding-top: 150px;
 }
-.text-box h1{
-    font-size: 65px;   
-    font-family: 'Roboto Slab', serif;
-    color: transparent;
-    -webkit-text-stroke: 0.1px #fff;
-}
+
 .text-box p{
     margin: 5px 0 20px;
     font-size: 20px;
-    color: #fff;
+    color: #ccccff;
     font-family: 'Roboto Slab', serif;
+    padding-top: 120px;
 }
 .abt{
    display: inline-flex; 
    text-decoration: none;
-   color: #fff;
+   color: #ccccff;
    border: 1px solid #fff;
    padding: 10px 25px;
-   font-size:10px;
+   font-size:10px bold;
    background:transparent;
    position: relative;
    cursor:pointer;
+   border-radius: 10px;
 }
 .abt:hover{
-    border: 1px solid #ccccff;
-    background: #ccccff;
+    border: 1px solid #ccccff8a;
+    background: #ccccff8a;
     transition: 1s;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+
+:root {
+	--angle: 4deg;
+}
+.word-container {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	outline: 1px solid;
+}
+
+.word {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Montserrat";
+	font-size: 8rem;
+	font-weight: 900;
+	color: var(--color, #DBCAFB, #BC9DF9,#937DFD, #775BFB );
+	display: flex;
+	pointer-events: none;
+	user-select: none;
+	line-height: 5.8rem;
+}
+	.char {
+		position: relative;
+		-webkit-text-stroke: 2px #000;
+		transform: translateY(-45%) rotate(var(--angle));
+		animation: up-and-down 2s ease infinite;
+		animation-delay: calc((var(--word-index) * -0.15s) + (var(--char-index) * 0.1s));
+		z-index: calc(-1 * var(--char-index));
+		margin-left: -1.6rem;
+	}
+
+
+@keyframes up-and-down {
+	0%,
+	100% {
+		transform: translateY(-45%) rotate(var(--angle));
+	}
+	50% {
+		transform: translateY(45%) rotate(var(--angle));
+	}
 }
