@@ -45,7 +45,9 @@ let newcommentForm3 = document.getElementById('newcommen3')
 let postedComment1 = document.getElementById('postedComment1')
 let postedComment2 = document.getElementById('postedComment2')
 let postedComment3 = document.getElementById('postedComment3')
+var today = new Date();
 
+var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
 
 newcommentForm1.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -53,10 +55,11 @@ newcommentForm1.addEventListener('submit', function(e) {
     let txcomment1 = document.getElementById('txcomment1').value
 
     html = `<div class="commentStyle">
-    <h5>${commName1}</h5>
+    <h4>-${commName1}-</h4>
     <p>${txcomment1}</p>
+    <p>${date}</p>
 </div>`
-    postedComment1.innerHTML += html
+postedComment1.innerHTML += html
 })
 
 newcommentForm2.addEventListener('submit', function(e) {
@@ -65,10 +68,11 @@ newcommentForm2.addEventListener('submit', function(e) {
     let txcomment2 = document.getElementById('txcomment2').value
 
     html = `<div class="commentStyle">
-    <h5>${commName2}</h5>
+    <h4>-${commName2}-</h4>
     <p>${txcomment2}</p>
+    <p>${date}</p>
 </div>`
-    postedComment2.innerHTML += html
+postedComment2.innerHTML += html
 })
 newcommentForm3.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -76,8 +80,9 @@ newcommentForm3.addEventListener('submit', function(e) {
     let txcomment3 = document.getElementById('txcomment3').value
 
     html = `<div class="commentStyle">
-    <h5>${commName3}</h5>
+    <h4>-${commName3}-</h4>
     <p>${txcomment3}</p>
+    <p>${date}</p>
 </div>`
     postedComment3.innerHTML += html
 })
