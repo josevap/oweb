@@ -31,6 +31,32 @@
                     </ul>  
                 </div>
             </nav>
+              <br>
+              <h2>Post a blog</h2>
+            <div class="new-container" data-visible="true">
+              <form class="blog">
+                <div>
+                  <label for="blog-title">Title</label>
+                  <br>
+                  <input type="text" name="blog-title" id="blog-title">
+                </div>
+                <div>
+                  <label for="blog-author">Author</label>
+                  <br>
+                  <input type="text" name="blog-author" id="blog-author">
+                </div>
+                <div>
+                  <label for="blog-content">Content</label>
+                  <br>
+                  <textarea name="blog-content" id="blog-content" cols="40" rows="12"></textarea>
+                </div>
+                <button type="submit" class="sumb">Post</button>
+              </form>
+            </div>
+
+            <div id="postedBlog">
+              <div id="date"></div>
+          </div>
 
             <div id="container">
                 <blog-card></blog-card>
@@ -105,6 +131,9 @@
                   </div>
                 </article>
               </a>
+              <script src="./blog.js"></script>   
         </section>
+
+         
     </body>
 </html>
